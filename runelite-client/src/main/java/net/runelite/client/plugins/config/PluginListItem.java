@@ -146,7 +146,7 @@ class PluginListItem extends JPanel implements SearchablePlugin
 
 		Map<String, Map<String, String>> pluginsInfoMap = oprsExternalPluginManager.getPluginsInfoMap();
 
-		if ((OPRSExternalPluginManager.isDevelopmentMode() || RuneLiteProperties.getLauncherVersion() == null) && pluginConfig.getPlugin() != null && pluginsInfoMap.containsKey(pluginConfig.getPlugin().getClass().getSimpleName()))
+		if (true)//if ((OPRSExternalPluginManager.isDevelopmentMode() || RuneLiteProperties.getLauncherVersion() == null) && pluginConfig.getPlugin() != null && pluginsInfoMap.containsKey(pluginConfig.getPlugin().getClass().getSimpleName()))
 		{
 			JButton hotSwapButton = new JButton(REFRESH_ICON);
 			hotSwapButton.setRolloverIcon(REFRESH_ICON_HOVER);
